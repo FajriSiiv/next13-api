@@ -1,9 +1,9 @@
-import React, { Suspense } from "react";
+import Pokmon from "./posts/page";
 
 const Home = () => {
   return (
     <div className="">
-      <h1>Hello World</h1>
+      <h1>Hello Home</h1>
     </div>
   );
 };

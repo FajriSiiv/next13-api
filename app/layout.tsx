@@ -9,8 +9,8 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body className="mx-auto">
-        {/* <Header /> */}
+      <body data-gr-c-s-loaded className="mx-auto">
+        <Header />
         {children}
       </body>
     </html>
