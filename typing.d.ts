@@ -1,6 +1,6 @@
-export type Todo = {
+export type PostProps = {
   userId: number;
   id: number;
   title: string;
-  completed: boolean;
+  body: string;
 };
