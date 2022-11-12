@@ -1,4 +1,7 @@
+import { useRouter } from "next/router";
 import React from "react";
+import Backbutton from "../../../components/Backbutton";
+
 interface PageProps {
   params: {
     id: string;
@@ -16,14 +19,14 @@ const fetchPost = async (id: string) => {
 
 const PostDetail = async ({ params: { id } }: PageProps) => {
   const data = await fetchPost(id);
-  console.log(data);
 
   return (
-    <div>
-      <p>user id : {data.userId}</p>
-      <p>id:{data.id}</p>
-      <p>title: {data.title}</p>
-      <p>body : {data.body}</p>
+    <div className="py-20 h-[100vh] px-32 flex gap-4 flex-col font-bold bg-rose-500 justify-center text-white text-2xl tracking-wide">
+      <Backbutton />
+      <p>User : {data.userId}</p>
+      <p>Id : {data.id}</p>
+      <p>Title : {data.title}</p>
+      <p>Body : {data.body}</p>
     </div>
   );
 };
