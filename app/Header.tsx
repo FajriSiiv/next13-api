@@ -8,6 +8,9 @@ function Header() {
       <Link href="/" className="px-2 py-1 bg-white text-rose-500">
         Home
       </Link>
+      <Link href="/posts" className="px-2 py-1 bg-white text-rose-500">
+        Home
+      </Link>
     </header>
   );
 }
