@@ -10,7 +10,6 @@ export default function RootLayout({
     <html>
       <head></head>
       <body data-gr-c-s-loaded className="mx-auto">
-        <Header />
         {children}
       </body>
     </html>

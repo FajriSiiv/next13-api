@@ -1,11 +1,11 @@
 import React from "react";
-import PokmonList from "./PokmonList";
+import PostList from "./PostList";
 
 const Pokmon = () => {
   return (
     <div>
       {/* @ts-ignore */}
-      <PokmonList />
+      <PostList />
     </div>
   );
 };
